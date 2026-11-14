@@ -1,0 +1,17 @@
+package com.substring.auth.auth_app_backend.repositories;
+
+import com.substring.auth.auth_app_backend.entities.User;
+import jakarta.validation.constraints.Email;
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.data.repository.CrudRepository;
+import org.springframework.stereotype.Repository;
+
+import java.util.Optional;
+import java.util.UUID;
+
+@Repository
+public interface UserRepository extends JpaRepository<User, UUID>{
+
+    Optional<User> findByEmail(String email);
+    boolean existsByEmail(String email);
+}
