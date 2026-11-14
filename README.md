@@ -167,7 +167,6 @@ auth-app/
 | `GOOGLE_CLIENT_SECRET` | Google OAuth secret      | `xxxxxx`                           |
 | `GITHUB_CLIENT_ID`     | GitHub OAuth client ID   | `ghp_xxxxx`                        |
 | `GITHUB_CLIENT_SECRET` | GitHub OAuth secret      | `ghs_xxxxx`                        |
-| `VITE_BACKEND_URL`     | Backend URL for frontend | `http://localhost:8081`            |
 
 ---
 
